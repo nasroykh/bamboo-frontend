@@ -1,2 +1,154 @@
-@import 'config';
+@import "config";
 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+html {
+	line-height: 1.15; 
+	-webkit-text-size-adjust: 100%; 
+}
+
+body {
+	width: 100%;
+}
+
+img {
+	max-width: 100%;
+}
+
+h2 {
+	font-family: 'Merriweather', serif;
+	font-size: 2.625em;
+}
+
+h3 {
+	font-family: 'Inter', sans-serif;
+	font-size: 1.5em;
+}
+
+button {
+	background-color: $secondaryColor;
+	outline: none;
+	border: none;
+	color: $primaryColor;
+	font-size: 1.125em;
+	font-family: 'Inter', sans-serif;
+	font-weight: bold;
+	border-radius: 1.875em;
+	padding: 1em 2em;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	background: url('/images/hero-image.png') no-repeat bottom;
+	background-size: cover;
+	
+	& > div:first-child {
+		opacity: 0.7;
+		background-color: $primaryColor;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 1.5em 6em;
+		box-shadow: $primaryColor 0px 4px 4px;
+
+		& > div:first-of-type, & > div:last-of-type {
+			flex: 1;
+			display: flex;
+			align-items: center;
+		}
+
+		& > div:last-of-type {
+			justify-content: flex-end;
+			column-gap: 3em;
+			& > span {
+			}
+		}
+
+		& > div:first-of-type {
+			justify-content: flex-start;
+		}
+	}
+
+	& > div:last-child {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+
+		& > .hero-arrow {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border: 2px solid #000 ;
+			border-radius: 100%;
+			width: 6.125em;
+			height: 6.125em;
+		}
+
+		& > .hero-text {
+			width: 80%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-between;
+
+			& > h3:first-child {
+				margin: 2.5em 0 2em;
+				letter-spacing: 0.2em;
+			}
+			
+			& > h2 {
+				font-weight: 400;
+				margin-bottom: .5em;
+			}
+			
+			& > h3:last-of-type {
+				line-height: 1.4em;
+				font-weight: 400;
+				padding: 0 auto;
+				width: 50%;
+				margin-bottom: 1em;
+			}
+
+			& > button {
+				margin-bottom: 5em;
+			}
+
+			& > .carousel-links {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				margin: 2em 0;
+				& > span {
+					border: 2px solid #fff;
+					width: 1.5625em;
+					height: 1.5625em;
+					margin: 0 .5em;
+					border-radius: 100%;
+				}
+
+				& > span:first-of-type {
+					background-color: #fff;
+				}
+			}
+		}
+	}
+
+}
+
+main {
+	
+}
+
+footer {
+	
+}
