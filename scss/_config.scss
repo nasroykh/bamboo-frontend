@@ -1,3 +1,10 @@
 $primaryColor: #181813;
 $secondaryColor: #FFB338;
-$mainTextColor: #000;
+$headerBgColor: rgba(24, 24, 19, 0.7);
+$m-pad: 1.25em;
+
+%flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
