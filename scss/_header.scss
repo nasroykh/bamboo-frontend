@@ -1,0 +1,44 @@
+header {
+	background: url('../images/hero-image.png') center/cover no-repeat;
+}
+
+header nav {
+	background-color: $headerBgColor;
+	@extend %flex;
+	justify-content: center;
+	position: relative;
+	padding: 1em 0;
+}
+
+#large-logo {
+	display: none;
+}
+
+#small-logo {
+	max-width: 5em;
+}
+
+.menu-icon {
+	position: absolute;
+	padding-left: $m-pad;
+	left: 0;
+
+	img {
+		max-width: 2em;
+	}
+}
+
+.header-buttons {
+	position: absolute;
+	padding-right: $m-pad;
+	right: 0;
+	@extend %flex;
+
+	img {
+		max-width: 1.75em;
+	}
+
+	a:last-child {
+		margin-left: 1.5em;
+	}
+}

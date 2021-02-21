@@ -1,0 +1,53 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Inter', sans-serif;
+}
+
+html {
+	line-height: 1.15; 
+	-webkit-text-size-adjust: 100%; 
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	font-family: 'Inter', sans-serif;
+}
+
+h1 {
+	font-family: 'Merriweather', serif;
+	font-size: 2rem;
+}
+
+h2 {
+	font-family: 'Merriweather', serif;
+	font-size: 1.75rem;
+}
+
+h3 {
+	font-family: 'Inter', sans-serif;
+	font-size: 1.25rem;
+}
+
+button {
+	font-family: 'Inter', sans-serif;
+	font-weight: bold;
+	cursor: pointer;
+	border: none;
+	background: none;
+}
+
+input {
+	border: none;
+	background: none;
+}
