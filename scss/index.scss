@@ -129,11 +129,11 @@
 .categories-products {
 	overflow-x: auto;
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(10000, 1fr);
 	column-gap: $m-pad;
 	padding: 0 0 2em $m-pad;
 	div {
-		width: 322px;
+		width: 85vw;
 	}
 
 	&::after {
